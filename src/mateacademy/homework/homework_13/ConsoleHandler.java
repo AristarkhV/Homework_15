@@ -24,7 +24,6 @@ public class ConsoleHandler {
                 Customer customer = new Customer(data[2], bet);
                 betDao.add(bet);
                 customerDao.add(customer);
-
             }
         } catch (Exception ex) {
             ex.printStackTrace();
