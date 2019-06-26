@@ -1,9 +1,9 @@
 package mateacademy.homework.homework_13;
 
 public class BetDaoFactory {
-    private static DaoInterface<Bet> instance;
+    private static BetDaoInterface instance;
 
-    public static DaoInterface<Bet> getInstance() {
+    public static BetDaoInterface getInstance() {
         if (instance == null) {
             instance = new BetDaoImpl();
         }

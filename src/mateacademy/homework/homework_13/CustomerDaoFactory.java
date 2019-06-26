@@ -1,9 +1,9 @@
 package mateacademy.homework.homework_13;
 
 public class CustomerDaoFactory {
-    private static DaoInterface<Customer> instance;
+    private static CustomerDaoInterface instance;
 
-    public static DaoInterface<Customer> getInstance() {
+    public static CustomerDaoInterface getInstance() {
         if (instance == null) {
             instance = new CustomerDaoImpl();
         }
