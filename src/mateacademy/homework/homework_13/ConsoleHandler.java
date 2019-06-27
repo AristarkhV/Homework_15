@@ -5,10 +5,10 @@ import java.util.Scanner;
 public class ConsoleHandler {
 
     @Inject
-    private static DaoInterface<Bet> betDao;
+    private static BetDaoInterface betDao;
 
     @Inject
-    private static DaoInterface<Customer> customerDao;
+    private static CustomerDaoInterface customerDao;
 
     public static void handle() {
         try (Scanner scanner = new Scanner(System.in)) {
